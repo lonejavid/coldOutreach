@@ -64,6 +64,9 @@ app.get('/get-photo', (req, res) => {
     res.sendFile(photoPath);
   });
 });
+app.get("/",(req,res)=>{
+  res.json("good")
+})
 
 // Export the app to make it work as a serverless function on Vercel
 module.exports = (req, res) => {
