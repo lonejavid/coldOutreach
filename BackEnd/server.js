@@ -49,7 +49,7 @@ app.get('/get-photo', (req, res) => {
       console.log('Photo not found:', err);
       return res.status(404).json({ message: 'Photo not found' });
     }
-    app.get("/",(req,res)=>{
+    app.get("/api",(req,res)=>{
       res.json("rrrr")
     })
 
